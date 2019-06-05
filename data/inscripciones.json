@@ -1,0 +1,44 @@
+[
+    {
+        "id": "73123611",
+        "cursoId": 101,
+        "nombre": "Armando Escandalo de los Rios",
+        "correo": "aescandalo@xyz.com",
+        "telefono": "6591018"
+    },
+    {
+        "id": "51693301",
+        "cursoId": 101,
+        "nombre": "Marie Curie",
+        "correo": "mcurrie@pasteur.fr",
+        "telefono": "55566777"
+    },
+    {
+        "id": "888777999",
+        "cursoId": 101,
+        "nombre": "Albert Einstein",
+        "correo": "aeinstein@mit.edu",
+        "telefono": "55566778"
+    },
+    {
+        "id": "73123611",
+        "cursoId": 201,
+        "nombre": "Armando Escandalo de los Rios",
+        "correo": "aescandalo@xyz.com",
+        "telefono": "6591018"
+    },
+    {
+        "id": "51693301",
+        "cursoId": 201,
+        "nombre": "Marie Curie",
+        "correo": "mcurrie@pasteur.fr",
+        "telefono": "55566777"
+    },
+    {
+        "id": "888777999",
+        "cursoId": 201,
+        "nombre": "Albert Einstein",
+        "correo": "aeinstein@mit.edu",
+        "telefono": "55566778"
+    }
+]

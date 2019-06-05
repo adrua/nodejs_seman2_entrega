@@ -1,0 +1,41 @@
+{{>header}}
+<h2>Coordinador - Cursos</h2>
+<form method="POST" action="/cursos">
+    <table>    
+        <tbody>
+            <tr>
+                <td>Id:</td>
+                <td><input name="id"></td>
+            </tr>
+            <tr>
+                <td>Descripcion:</td>
+                <td><input name="descripcion"></td>
+            </tr>
+            <tr>
+                <td>Valor:</td>
+                <td><input type="number" name="valor"></td>
+            </tr>
+            <tr>
+                <td>Modalidad:</td>
+                <td>
+                    <select name="modalidad">
+                        <option value=''>Ninguna</option>
+                        <option value='V'>Virtual</option>
+                        <option value='P'>Presencial</option>
+                    </select>       
+                </td>
+            </tr>
+            <tr>
+                <td>Intensidad:</td>
+                <td><input type="number" name="intensidad"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit">Guardar</td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+<h3><pre>{{result.error}}</pre></h3>
+{{{mostrarCursos}}}
+{{>footer}}

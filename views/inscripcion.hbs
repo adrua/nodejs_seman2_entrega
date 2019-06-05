@@ -1,0 +1,73 @@
+{{>header}}
+<h2>Aspirantes - Inscripciones</h2>
+<table>
+    <tbody>
+        <tr>
+            <td>
+                <table>    
+                    <thead>
+                        <th>Curso</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Id:</td>
+                            <td>{{curso.id}}</td>
+                        </tr>
+                        <tr>
+                            <td>Descripcion:</td>
+                            <td>{{curso.descripcion}}</td>
+                        </tr>
+                        <tr>
+                            <td>Valor:</td>
+                            <td>{{curso.valor}}</td>
+                        </tr>
+                        <tr>
+                            <td>Modalidad:</td>
+                            <td>{{getModalidad curso.modalidad}}</td>
+                        </tr>
+                        <tr>
+                            <td>Intensidad:</td>
+                            <td>{{curso.intensidad}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td>
+                <form method="POST" action="/inscripcion">
+                    <table>    
+                        <thead>
+                            <th>Aspirante</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Id:</td>
+                                <td>
+                                    <input name="id" value="{{inscripcion.id}}">
+                                    <input type="hidden" name="cursoId" value="{{curso.id}}">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Nombre:</td>
+                                <td><input name="nombre" value="{{inscripcion.nombre}}"></td>
+                            </tr>
+                            <tr>
+                                <td>Correo:</td>
+                                <td><input type="email" name="correo" value="{{inscripcion.correo}}"></td>
+                            </tr>
+                            <tr>
+                                <td>Telefono:</td>
+                                <td><input type="tel" name="telefono" value="{{inscripcion.telefono}}"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><button type="submit">Guardar</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+                <h3><pre>{{result.error}}</pre></h3>
+            </td>
+        </tr>
+    </tbody>
+</table>
+{{>footer}}

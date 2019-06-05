@@ -1,10 +1,9 @@
-# nodejs_semana_1
+# nodejs_semana_2
 ## Commandos disponible
 
-### Listado de Cursos
-- node index 
-- node index mostrar-cursos
+### Modulo de Cursos Activar el servidor
+- node src/app 
+- nodemon src/app
 
-### Preinscripcion
-- node index preincripcion -curso=### -cedula=######## -nombre="xxx xxxx xxx"
-- node index preincripcion -i=### -c=######## -n="xxx xxxx xxx"
+### Cliente Web
+http://localhost:3000
