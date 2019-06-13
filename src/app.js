@@ -10,6 +10,9 @@ const inscripciones = require('./inscripciones');
 
 const directorioPublico = path.join(__dirname ,'../public');
 const directorioPartials = path.join(__dirname ,'../partials');
+
+const port = process.env.PORT || 3000;
+
 app.use(express.static(directorioPublico));
 app.use(bodyParser.urlencoded());
 app.use(bodyParser.json());
@@ -63,6 +66,6 @@ app.get('*', (req, res) => {
 });
 
 
-app.listen(3000, () => {
-    console.log('Escuchando en el puerto 3000')
+app.listen(port, () => {
+    console.log('Escuchando en el puerto ' + port)
 })
